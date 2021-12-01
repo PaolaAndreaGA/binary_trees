@@ -8,8 +8,6 @@
  *Return: a pointer to the new node, or NULL on failure
  */
 
-
-
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *aux_tree;
@@ -19,6 +17,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 			return (NULL);
 
 	aux_tree = malloc(sizeof(binary_tree_t));
+
 	if (aux_tree == NULL)
 		return (NULL);
 
@@ -26,7 +25,5 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	aux_tree->parent = parent;
 	aux_tree->left = NULL;
 	aux_tree->right = NULL;
-
 	return (aux_tree);
-
 }
