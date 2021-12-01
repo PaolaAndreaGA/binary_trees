@@ -1,4 +1,4 @@
-#include "binary_tree.h"
+#include "binary_trees.h"
 
 /**
  *binary_tree_node - function that creates a binary tree node
@@ -11,10 +11,6 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *aux_tree;
-
-	if (parent)
-		if (parent->left && parent->right)
-			return (NULL);
 
 	aux_tree = malloc(sizeof(binary_tree_t));
 
